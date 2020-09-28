@@ -1,14 +1,20 @@
 #header{
-    display: -moz-inline-grid;
+    display: flex;
     position: fixed;
-    z-index: 2;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
 }
 #header-img{
     width: 25%;
 }
 #nav-bar{
-    display:-moz-inline-grid;
-    text-align: right;
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 25%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -39,4 +45,10 @@
       padding: 0 auto;
       margin: 10px 10px;
       font-size: 20px;
+  }
+
+  #feature {
+      margin: 5px;
+      display: flex;
+      flex-direction: column;
   }
